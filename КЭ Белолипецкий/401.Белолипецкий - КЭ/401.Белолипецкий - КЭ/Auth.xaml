@@ -1,0 +1,29 @@
+﻿<Window x:Class="_401.Белолипецкий___КЭ.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_401.Белолипецкий___КЭ"
+        mc:Ignorable="d"
+        Title="Auth" Height="450" Width="800">
+    <Grid Background="#FF009FDA">
+        <Rectangle Margin="0,0,0,339" Fill="#FF004165" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.078"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Image Margin="0,0,712,339" Source="logo.png" Stretch="Fill"/>
+        <Label Content="АВТОРИЗАЦИЯ" HorizontalAlignment="Left" Margin="280,20,0,0" VerticalAlignment="Top" Height="40" Width="214" Foreground="#FF009FD6" FontSize="24" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="tb_login"  HorizontalAlignment="Left" Height="34" Margin="280,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" FontSize="22"/>
+        <TextBox x:Name="tb_password" HorizontalAlignment="Left" Height="34" Margin="280,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="22" Width="214"/>
+        <Label Content="ЛОГИН" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="280,118,0,0" VerticalAlignment="Top" FontSize="20" Width="214" Foreground="#FF004165"/>
+        <Label Content="ПАРОЛЬ" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="280,199,0,0" VerticalAlignment="Top" FontSize="20" Width="214" Foreground="#FF004165"/>
+        <Button x:Name="btn_ent" Content="ВОЙТИ" FontSize="20" HorizontalAlignment="Left" Margin="280,288,0,0" VerticalAlignment="Top" Width="214" Height="40" Background="#FF004165" BorderBrush="#FF004165" Foreground="#FF009FDA" Click="btn_ent_Click"/>
+
+    </Grid>
+</Window>
